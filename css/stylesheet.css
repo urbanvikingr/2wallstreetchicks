@@ -6,7 +6,7 @@
 html, body {
     width: 100%; /* Added */
     height: 100%; /* Added */
-    overflow-x: hidden; /* Dan added the above to deal with white space in mobile view*/
+    overflow-x: hidden; /* Added the above to deal with white space in mobile view*/
     margin: 0;
     padding: 0;
     font-size: 16px;
