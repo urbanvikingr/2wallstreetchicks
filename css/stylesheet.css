@@ -1,0 +1,425 @@
+* {
+    font-family: Garamond, serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%; /* Added */
+    height: 100%; /* Added */
+    overflow-x: hidden; /* Dan added the above to deal with white space in mobile view*/
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0;
+    width: 100%;   
+}
+
+/* HEADER SECTION */
+.header {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#wall {
+    font-size: 2rem;
+    opacity: .5;
+    color: #f442d7;
+}
+
+.logo {
+    width: 30%;
+    text-align: center;
+    color: #4D4D4D;
+    background-color: rgb(242, 242, 242);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    float: left;
+    height: 100%;  
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 70%;
+    color: #4D4D4D;
+    background-color: rgb(242, 242, 242);
+    padding-top: 3%;
+    padding-bottom: 1%;
+    float: right;
+    height: 100%; 
+    text-align: right;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+
+a {
+    color: #4D4D4D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f442d7; 
+}
+
+@media screen and (max-width: 960px ) {
+    .logo {
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    
+    .nav {
+        float: left;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .nav li {
+        font-size: 1.25rem;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media screen and (max-width: 480px ){
+    .nav li {
+        font-size: 1rem;
+        padding-top: 1%;
+    }   
+}
+/* END HEADER */
+
+
+/* ABOUT */
+.about {
+    background: url("http://www.moraterapibursa.com/wp-content/uploads/2017/03/8f970e_7ccbb5e8748542889818bb221240b868.jpg");
+    height: 800px;
+    repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+.about h1 {
+    padding-top: 20%;
+    float: left;
+    text-align: center;
+    padding-left: 15%;
+    font-size: 2rem;
+    position: relative;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+    .about h1 {
+        padding-top: 30%;
+    }
+}
+
+
+@media screen and (max-width: 600px ){
+    .about h1 {
+        padding-top: 70%;
+    }   
+}  
+/* END ABOUT */
+
+
+/* SERVICES */
+.services {
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    color: #4D4D4D;
+    height: 850px;
+    text-align: center;
+    float: left;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.services h1 {
+    width: 30%;
+    margin: 0 auto;
+    border-bottom: .125rem solid lightgray;
+}
+
+.services li {
+    display: list-item;
+    padding: 1.5%;
+    text-decoration-style: none;
+    font-size: 1.75rem;
+    margin: 0 auto;
+}
+
+.servicesimg {
+    width: 8%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 480px ){
+    .services {
+        width: 100%;
+        height: auto;
+        padding-top: 20%;
+        overflow: hidden;
+    }
+
+    .services h1 {
+        padding-top: 40%;
+    }
+    .services li {
+        font-size: 1.25rem;
+        padding: 5%;
+    }
+    .servicesimg {
+        width: 20%;
+        height: auto;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 960px ) {
+    .services {
+        padding-top: 25%;
+    }
+}
+
+
+/* END SERVICES */
+
+
+
+/* TEAM */
+
+.team {
+    background-color: #c2d3d9;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    padding-bottom: 7.5%;
+}
+
+.team h1 {
+    color: #4D4D4D;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.melissadesc {
+    width: 50%;
+    float: left;
+}
+
+.melissaimg {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.melissapic {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.melissa {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.melissaname {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #4D4D4D;
+    margin-top: 4%;   
+    line-height: 1.5rem;      
+}
+
+.melissabio {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    color: #4D4D4D;
+    opacity: .90;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 4%;
+}
+
+.mayradesc {
+    width: 50%;
+    float: right;
+}
+
+
+.mayraimg {
+    width: 54%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.mayrapic {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.mayra {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.mayraname {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #4D4D4D;
+    margin-top: 4%;
+    line-height: 1.5rem;    
+}
+
+
+.mayrabio {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    color: #4D4D4D;
+    opacity: .90;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 4%;
+}
+
+#linkedin {
+    color: blue;
+}
+
+@media screen and (max-width: 480px) {
+    .melissabio, .mayrabio {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 960px ){
+    .team {
+        padding-top: 40%;
+    }
+    .melissadesc {
+        width: 100%;
+        float: left;
+        padding: 10%;
+    }
+    .mayradesc {
+        width: 100%;
+        float: left;
+        padding: 10%;      
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 960px ){
+    .team {
+        padding-top: 20%;
+    }
+
+    .melissadesc {
+        padding: 5%;
+    }
+
+    .mayradesc {
+        padding: 5%;
+    }
+}    
+
+/* END TEAM */
+
+
+
+/*FOOTER*/
+
+.footer {
+    width: 100%;
+    height: 25%;
+    margin: 0 auto;
+    clear: both;
+    background-color: rgb(242, 242, 242);
+    color: #4D4D4D;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    display: block;
+    text-align: center;
+ } 
+
+#twitter {
+    color: rgb(0, 172, 237);
+}
+
+#copyright {
+    font-size: 1rem;
+    float: left;
+    text-align: left;
+}    
+
+@media screen and (max-width: 480px) {
+    .footer {
+        font-size: 1rem;
+        padding-top: 5%;
+        padding-bottom: 5%;       
+    }
+
+    #copyright {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1400px) {
+    .footer {
+        padding-top: 0%;
+        padding-bottom: 1%;
+    }
+}
